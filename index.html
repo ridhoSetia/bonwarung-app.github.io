@@ -76,5 +76,14 @@
         </label>
       </div>
     </template>
+<br>
+<button id="reset" style="position: fixed; left: 0; bottom: 0; margin: 5px;">reset</button>
+<script>
+  const reset = document.querySelector('#reset')
+  reset.onclick = () => {
+    localStorage.clear()
+    window.location.reload()
+  }
+</script>
   </body>
 </html>
