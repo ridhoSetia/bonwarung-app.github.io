@@ -1,0 +1,132 @@
+:root {
+  --clr-primary: #9336b4;
+  --clr-light: #ffe79b;
+  --clr-dark: #dd58d6;
+  --clr-warning: #723794;
+}
+
+* {
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  color: var(--clr-primary);
+  background: var(--clr-light);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  background-image: url(tekstur.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  color: var(--clr-light);
+}
+
+form button {
+  background: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
+button {
+  background: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+button:hover {
+  text-decoration: underline;
+}
+
+.tasks-form,
+.list-box {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.all-tasks {
+  display: block;
+  padding: 10px 40px;
+  background: var(--clr-dark);
+  border: 5px solid var(--clr-light);
+  border-radius: 5px;
+  box-shadow: 0 15px 20px rgb(0, 0, 0, 0.25);
+}
+.task-list-title {
+  margin: 0 -10px;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--clr-primary);
+  color: #fff;
+}
+form input {
+  width: 85%;
+  font-size: 16px;
+  position: relative;
+  left: -10px;
+  margin-bottom: 20px;
+}
+input::placeholder {
+  color: #fff;
+}
+
+.todo-list {
+  padding: 20px 30px;
+  background: #40128b;
+  border-radius: 5px;
+  border: 5px solid var(--clr-light);
+  box-shadow: 0 15px 20px rgb(0, 0, 0, 0.25);
+}
+
+.task-list {
+  list-style: square;
+  margin: 10px 0;
+  font-weight: 700;
+  color: #40128b;
+}
+.task-list li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+.task-list li:hover {
+  text-decoration: underline;
+  color: var(--clr-warning);
+}
+
+.task-count {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: rgb(255, 231, 155, 0.8);
+}
+
+.task input {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.task label {
+  font-size: 20px;
+}

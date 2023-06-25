@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website BON Warung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Lilita+One&family=Poppins&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="tasks-form">
+    <div class="all-tasks">
+      <h2 class="task-list-title">Daftar BON di Warung</h2>
+
+      <form action="" data-new-list-form>
+        <button class="btn create" aria-label="create new list">+</button>
+        <input 
+          type="text"
+          class="new list"
+          data-new-list-input
+          placeholder="tambah nama bon baru"
+          aria-label="new list name"
+        />
+      </form>
+      <ul class="task-list" data-lists></ul>
+
+    </div>
+  </div>
+
+  <div class="list-box">
+    <div class="todo-list" data-list-display-container>
+      <div class="todo-header">
+        <h2 class="list-title" data-list-title>Nama</h2>
+        <p class="task-count" data-list-count>0 hutang belum dibayar</p>
+      </div>
+
+      <div class="todo-body">
+        <div class="tasks" data-tasks></div>
+
+        <div class="new-task-creator">
+            <form action="" data-new-task-form>
+              <button class="btn create" aria-label="create new task">+</button>
+              <input 
+                  type="text"
+                  data-new-task-input
+                  class="new task"
+                  placeholder="tambah daftar hutang baru"
+                  aria-label="new task name"
+                />
+              </form>
+        </div>
+
+        <div class="delete-stuff">
+          <button class="btn delete" data-clear-complete-tasks-button>Hapus hutang yang dipilih</button>
+          <button class="btn delete" data-delete-list-button>Tandai sebagai lunas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+    </div>
+    <template id="task-template">
+      <div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom-checkbox"></span>
+        </label>
+      </div>
+    </template>
+  </body>
+</html>
